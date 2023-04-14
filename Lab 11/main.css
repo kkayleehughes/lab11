@@ -1,0 +1,65 @@
+@import 'variable';
+@import '_grid';
+@media screen and (max-width: 200px) {
+    .grid {
+        display: grid;
+        background-color: rgb(67, 100, 161);
+        padding: 20px;
+        grid-gap: $grid-gap;
+        font-size: $border-style; /* Invalid use of variable */
+        border: $border-style;
+    }
+}
+@media screen and (min-width: 1px) {
+    .grid {
+        display: grid;
+        background-color: cornflowerblue;
+        padding: 20px;
+        grid-gap: $grid-gap;
+        font-size: $font-size;
+        border: $border-style;
+    }
+}
+@media screen and (min-width: 1001px) {
+    .grid {
+        display: grid;
+        background-color: rgb(190, 204, 230);
+        padding: 20px;
+        grid-gap: $grid-gap;
+        font-size: $font-size;
+        border: $border-style; /* Invalid use of variable */
+    }   
+}
+.grid-item {
+    border: $border-style;
+}
+.grid-item-1 {
+    grid-row: span 2;
+    grid-column: span 2;
+    border: $border-style;
+}
+.grid-item-2 {
+    grid-row: span 1;
+    grid-column: span 2;
+    border: $border-style;
+}
+.grid-item-3 {
+    grid-row: span 3;
+    grid-column: span 1;
+    border: $border-style;
+}
+.grid-item-4 {
+    grid-row: span 1;
+    grid-column: span 1;
+    border: $border-style;
+}
+.grid-item-5 {
+    grid-row: span 1;
+    grid-column: span 1;
+    border: $border-style;
+}
+.grid-item-6 {
+    grid-row: 3;
+    grid-column: 2;
+    border: $border-style;
+}

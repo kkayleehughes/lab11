@@ -1,0 +1,17 @@
+/* _styles.scss */
+/* Define variables for attribute values */
+$grid-gap: 20px;
+$font-size: 30px;
+$element-bg-color: rgb(190, 204, 230);
+$border-style: solid rgb(20, 20, 75);
+
+.grid-item-1,
+.grid-item-2,
+.grid-item-3,
+.grid-item-4,
+.grid-item-5
+.grid-item-6
+{
+  background-color: $element-bg-color;
+  border: $border-style;
+}
